@@ -73,6 +73,7 @@ int main(){
   printf("\nA média dos valores é %d", media);
 
   // Exercício 6 - Replique os dois códigos anteriores invertendo a ordem da função printf e do bloco if para avaliar o efeito das palavras break e continue.
+ 
   int contador;
   for (int contador = 1; contador <= 5; ++contador){
 
@@ -95,6 +96,7 @@ int main(){
   puts("");
 
   // Desafio 1 - Faça um programa que peça dois números, base e expoente, calcule e mostre o primeiro número elevado ao segundo número. Forneça várias soluções utilizando dos três laços que você aprendeu, mas não utilize a função de potência da linguagem.
+  
   int base, expoente, resultado = 1;
   printf("Informe a base: ");
   scanf("%d", &base);
