@@ -3,18 +3,18 @@
 int main(){
  // Exercício 1 - Faça um programa que leia 5 números e informe a soma dos números.
   
-  int contador = 0, num, soma = 0;;
+  /*int contador = 0, num, soma = 0;;
   while (contador <= 5){
     printf("Informe o %d° número: ", contador + 1);
     scanf("%d", &num);
     soma += num;
     contador += 1;
   }
-  printf("A soma dos números digitados é: %d", soma);
+  printf("A soma dos números digitados é: %d", soma);*/
 
   // Exercício 2 - Faça um programa que calcule a média aritmética de um número determinado de números.
   
-  int quantNum, num, contador, soma = 0;
+  /*int quantNum, num, contador, soma = 0;
   printf("Média de quantos números? ");
   scanf("%d", &quantNum);
   contador = quantNum;
@@ -26,11 +26,11 @@ int main(){
     contador -= 1;
   }
   int media = soma / quantNum;
-  printf("\nA média dos valores é %d", media);
+  printf("\nA média dos valores é %d", media);*/
 
   // Exercício 3 - Reescreva a solução do exercício 2 utilizando for.
   
-  int quantNum, num, contador, soma = 0;
+  /*int quantNum, num, contador, soma = 0;
   printf("Média de quantos números? ");
   scanf("%d", &quantNum);
   contador = quantNum;
@@ -41,11 +41,11 @@ int main(){
     soma += num;
   }
   int media = soma / quantNum;
-  printf("\nA média dos valores é %d", media);
+  printf("\nA média dos valores é %d", media);*/
 
   // Exercício 4 - Faça um programa que calcule o fatorial de um número inteiro fornecido pelo usuário.
   
-  int num, fatorial = 1, i;
+  /*int num, fatorial = 1, i;
   printf("Informe um número para calcular seu fatorial: ");
   scanf("%d", &num);
   i = num;
@@ -53,11 +53,11 @@ int main(){
   for (i; i != 0; i--){
     fatorial *= i;
   }
-  printf("O fatorial de %d é %d", num, fatorial);
+  printf("O fatorial de %d é %d", num, fatorial);*/
 
   // Exercício 5 -  Reescreva novamente a solução do exercício 2 utilizando do-while.
   
-  int quantNum, num, contador, soma = 0;
+  /*int quantNum, num, contador, soma = 0;
   printf("Média de quantos números? ");
   scanf("%d", &quantNum);
   contador = quantNum;
@@ -70,11 +70,10 @@ int main(){
   } while (contador != 0);
   
   int media = soma / quantNum;
-  printf("\nA média dos valores é %d", media);
+  printf("\nA média dos valores é %d", media);*/
 
   // Exercício 6 - Replique os dois códigos anteriores invertendo a ordem da função printf e do bloco if para avaliar o efeito das palavras break e continue.
- 
-  int contador;
+  /*int contador;
   for (int contador = 1; contador <= 5; ++contador){
 
     if (contador == 3)
@@ -83,9 +82,8 @@ int main(){
     printf("%d ", contador);  // Com o break antes do print, o contador vai somente até 2
   }
   
-  puts("");
- 
-  int contador;
+  puts("");*/
+  /*int contador;
   for (int contador = 1; contador <= 5; ++contador) {
     printf("%d ", contador);
     
@@ -93,11 +91,10 @@ int main(){
       continue;
   }
   
-  puts("");
+  puts("");*/
 
   // Desafio 1 - Faça um programa que peça dois números, base e expoente, calcule e mostre o primeiro número elevado ao segundo número. Forneça várias soluções utilizando dos três laços que você aprendeu, mas não utilize a função de potência da linguagem.
-  
-  int base, expoente, resultado = 1;
+  /*int base, expoente, resultado = 1;
   printf("Informe a base: ");
   scanf("%d", &base);
   printf("Informe o expoente: ");   
@@ -109,9 +106,9 @@ int main(){
     i--;
   } while (i != 0);
   
-  printf("O resultado de %d elevado a %d é: %d", base, expoente, resultado);
+  printf("O resultado de %d elevado a %d é: %d", base, expoente, resultado);*/
   
-  int base, expoente, resultado = 1;
+  /*int base, expoente, resultado = 1;
   
   printf("Informe a base: ");
   scanf("%d", &base);
@@ -124,7 +121,18 @@ int main(){
     i--;
   }
   
-  printf("O resultado de %d elevado a %d é: %d", base, expoente, resultado);
+  printf("O resultado de %d elevado a %d é: %d", base, expoente, resultado);*/
+  
+  /*int base, expoente, resultado = 1;
+  printf("Informe a base: ");
+  scanf("%d", &base);
+  printf("Informe o expoente: ");   
+  scanf("%d", &expoente);
+  
+  for (int i = 0; i < expoente; i++){
+    resultado *= base;
+  }
+  printf("O resultado de %d elevado a %d é: %d", base, expoente, resultado);*/
   
   return 0;
 }
