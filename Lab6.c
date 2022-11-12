@@ -9,25 +9,27 @@ int converter_horas(int horas);
 void verificar_ampm(int horas);
 void converter_mes(int dia, int mes, int ano);
 
-//int main (){
+int main (){
   // Exercício 1 - Pesquise funções matemáticas de trigonometria e elabore um código com exemplos de uso delas.
-  /*float numero;
+  
+  float numero;
   printf("Informe um número: ");
   scanf("%f", &numero);
   printf("O Seno do número informado é %.2f, o Cosseno é %.2f e a Tangente é %.2f", sin(numero), cos(numero), tan(numero));*/
 
   // Exercício 2 - Defina uma função que retorna o maior dentre 4 números inteiros passados como parâmetro.
-  /*int num[4];
+  
+    int num[4];
   for (int i = 0; i < 4; i++){
     printf("Informe o %d° número inteiro: ", i + 1);
     scanf("%d", &num[i]);
   }
   
-  printf("O maior número entre os 4 digitados é %d", retornar_maior(num[0], num[1], num[2], num[3]));*/
+  printf("O maior número entre os 4 digitados é %d", retornar_maior(num[0], num[1], num[2], num[3]));
 
   // Exercício 3 - Modifique o exemplo da função do cálculo de peso para inserir condições entre peso ideal para mulheres e homens, aplicando as seguintes fórmulas - mulheres: (62.1*altura) - 44.7 e homens: (72.7*altura) - 58.
 
-  /*char sexo;
+  char sexo;
   float altura;
   
   printf("Informe sua altura: ");
@@ -35,11 +37,11 @@ void converter_mes(int dia, int mes, int ano);
   printf("Informe seu sexo [M - Masculino, F - Feminino]: ");
   scanf("%s", &sexo);
 
-  peso_ideal(altura, sexo);*/
+  peso_ideal(altura, sexo);
 
   // Desafio 1 - Faça um programa que converta da notação de 24 horas para a notação de 12 horas. Por exemplo, o programa deve converter 14:25 em 2:25 P.M. A entrada é dada em dois inteiros. Seu programa deve contar com duas funções: uma para fazer a conversão e uma para a saída. Registre a informação A.M./P.M. como um valor ‘A’ para A.M. e ‘P’ para P.M. Assim, a função para efetuar as conversões terá um parâmetro formal para registrar se é A.M. ou P.M. Inclua um loop que permita que o usuário repita esse cálculo para novos valores de entrada todas as vezes que desejar.
   
-  /*int horas, minutos, cont = 1, verificador;
+  int horas, minutos, cont = 1, verificador;
   
   do{
     printf("Informe a hora (em números inteiros e separados por espaço) a ser convertida: ");
@@ -53,11 +55,11 @@ void converter_mes(int dia, int mes, int ano);
     sleep(1);
     printf("\nDeseja continuar? [1 - Sim, 0 - Não]: ");
     scanf("%d", &cont);
-  } while (cont != 0);*/
+  } while (cont != 0);
 
   // Desafio 2: Pesquise qual a função para gerar números aleatórios e monte um "jogo" onde você tenta advinhar o número gerado pelo computador.
   
-  /*int numero_jogador, numero_maquina;
+  int numero_jogador, numero_maquina;
   
   printf("---------Jogue contra a máquina---------\n");
   printf("Acabei de pensar em um número de 0 a 10\n");
@@ -74,11 +76,11 @@ void converter_mes(int dia, int mes, int ano);
     printf("\nParabéns, você conseguiu me vencer!");
   } else {
     printf("\nHaha, eu venci, pensei no número %d e não no %d", numero_maquina, numero_jogador);
-  }*/
+  }
 
   // Desafio 3: Construa uma função que receba uma data no formato DD/MM/AAAA e devolva uma string no formato D de mesPorExtenso de AAAA. Opcionalmente, valide a data e retorne "NULL" caso a data seja inválida. Você pode utilizar funções da biblioteca <time.h>.
   
-  /*int dia, mes, ano;
+  int dia, mes, ano;
   
   printf("Informe uma data (dia, mês e ano separados por espaço): ");
   scanf("%d %d %d", &dia, &mes, &ano);
@@ -86,10 +88,10 @@ void converter_mes(int dia, int mes, int ano);
     converter_mes(dia, mes, ano);
   } else {
     printf("Data inválida!");
-  }*/
+  }
   
-//  return 0;
-//}
+  return 0;
+}
 
 int retornar_maior(int num1, int num2, int num3, int num4){
   // Função para o Exercício 2
