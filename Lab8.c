@@ -5,10 +5,10 @@
 #define tamanho1 10
 #define tamanho2 100
 
-//int main(){
+int main(){
   // Exercício 1 - Faça um Programa que leia 20 números, que devem ser inseridos em dois arrays com 10 elementos cada. Gere um terceiro vetor de 20 elementos, cujos valores deverão ser compostos pelos elementos intercalados dos dois outros arrays.
   
-  /*int vetor1[tamanho1], vetor2[tamanho1], vetor3[20];
+  int vetor1[tamanho1], vetor2[tamanho1], vetor3[20];
   for (int i = 0; i < 10; i++){
     printf("Informe um valor para o 1° array: ");
     scanf("%d", &vetor1[i]);
@@ -25,11 +25,11 @@
   }
   for (int j = 0; j < tamanho1 * 2; j++){
     printf("%d ", vetor3[j]);
-  }*/
+  }
 
   // Exercício 2 - Faça um programa que simule um lançamento de dados. Lance o dado 100 vezes e armazene os resultados em um array. Depois, mostre quantas vezes cada valor foi conseguido.
   
-  /*int num[tamanho2], contZero = 0, contUm = 0, contDois = 0, contTres = 0, contQuatro = 0, contCinco = 0, contSeis = 0;
+  int num[tamanho2], contZero = 0, contUm = 0, contDois = 0, contTres = 0, contQuatro = 0, contCinco = 0, contSeis = 0;
   
   srand(time(NULL));
   
@@ -53,11 +53,11 @@
       contSeis++;
     }
   }
-  printf("[0] - %d\n[1] - %d\n[2] - %d\n[3] - %d\n[4] - %d\n[5] - %d\n[6] - %d\n", contZero, contUm, contDois, contTres, contQuatro, contCinco, contSeis);*/
+  printf("[0] - %d\n[1] - %d\n[2] - %d\n[3] - %d\n[4] - %d\n[5] - %d\n[6] - %d\n", contZero, contUm, contDois, contTres, contQuatro, contCinco, contSeis);
 
   // Desafio 1 - Faça um programa que faça 5 perguntas para uma pessoa sobre um crime (1 para SIM e 0 para NÃO). As perguntas são: "Telefonou para a vítima?", "Esteve no local do crime?", "Mora perto da vítima?", "Devia para a vítima?", "Já trabalhou com a vítima?". O programa deve no final emitir uma classificação sobre a participação da pessoa no crime. Se a pessoa responder positivamente a 2 questões ela deve ser classificada como "Suspeita", entre 3 e 4 como "Cúmplice" e 5 como "Assassino". Caso contrário, ele será classificado como "Inocente".
   
-  /*int respostas[5], contSim = 0;
+  int respostas[5], contSim = 0;
   
   printf("Responda 1 para SIM e 0 para NÃO\n");
   printf("Você telefonou para a vítima? ");
@@ -85,11 +85,11 @@
     printf("Você está classificado como Assasino");
   } else {
     printf("Você é Inocente!");
-  }*/
+  }
 
   // Desafio 2 - Faça um programa que leia um número indeterminado de valores, correspondentes a notas, encerrando a entrada de dados quando for informado um valor igual a -1 (que não deve ser armazenado). Após esta entrada de dados: Mostre a quantidade de valores que foram lidos; Exiba todos os valores na ordem em que foram informados, um ao lado do outro; Exiba todos os valores na ordem inversa à que foram informados, um abaixo do outro; Calcule e mostre a soma dos valores; Calcule e mostre a média dos valores; Calcule e mostre a quantidade de valores acima da média calculada; Calcule e mostre a quantidade de valores abaixo de sete.
   
-  /*int *num, i = 0, cont = 0, soma = 0, media, acimaMedia = 0, abaixoSete = 0;
+  int *num, i = 0, cont = 0, soma = 0, media, acimaMedia = 0, abaixoSete = 0;
   num = (int *) malloc(sizeof (int));
 
   do {
@@ -136,22 +136,22 @@
       abaixoSete++;
     }
   }
-  printf("%d", abaixoSete);*/
+  printf("%d", abaixoSete);
 
   // Exercício 3 - Nome na vertical. Faça um programa que solicite o nome do usuário e imprima-o na vertical.
   
-  /*char nome[21];
+  char nome[21];
   
   printf("Informe seu nome [Máx 20 caracteres]: ");
   scanf("%s", nome);
 
   for (int i = 0; i < 20 && nome[i] != '\0'; i++){
     printf("%c\n", nome[i]);
-  }*/
+  }
 
   // Desafio 3 - Modifique o programa anterior de forma a mostrar o nome em formato de escadas (normal e invertida).
   
-  /*char nome[21];
+  char nome[21];
   
   printf("Informe seu nome [Máx 20 caracteres]: ");
   scanf("%s", nome);
@@ -168,7 +168,7 @@
         printf("%c", nome[j]);
       }
       printf("\n");
-  }*/
+  }
   
-  //return 0;
-//}
+  return 0;
+}
